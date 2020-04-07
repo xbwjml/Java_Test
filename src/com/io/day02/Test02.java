@@ -13,7 +13,7 @@ public class Test02 {
 		char[] chs = new char[1024];
 		int len;
 		while( (len=fr.read(chs)) != -1  ) {
-			System.out.print(new String(chs,0,len));
+			System.out.print(new String(chs,0,len));	
 		}
 		
 
