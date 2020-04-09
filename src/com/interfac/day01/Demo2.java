@@ -5,6 +5,9 @@ package com.interfac.day01;
  * @Date 2020 - 04 - 07 - 20:30
  */
 public class Demo2 {
+    public static void main(String[] args) {
+        String s = "test";
+    }
 }
 
 interface A {
