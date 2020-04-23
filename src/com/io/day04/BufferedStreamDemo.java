@@ -17,12 +17,12 @@ public class BufferedStreamDemo {
 
         //创建输入缓冲流对象
         BufferedReader br =new BufferedReader(new FileReader("a.txt"));
-
         /*//一次读写一个字符
         int ch;
         while( (ch=br.read())!=-1 ){
             System.out.print((char)ch);
         }*/
+
 
         //一次读写一个字符数组
         char[] chs = new char[1024];
@@ -30,7 +30,6 @@ public class BufferedStreamDemo {
         while( (len=br.read(chs))!=-1 ){
             System.out.print(new String(chs,0,len));
         }
-
 
         //释放资源
         br.close();

@@ -8,7 +8,7 @@ import java.io.*;
  */
 public class BufferedStreamDemo {
     public static void main(String[] args) throws IOException {
-        /*
+
         BufferedWriter bw = new BufferedWriter(new FileWriter("a.txt"));
         for( int i=0; i<10; i++ ){
             bw.write("hello"+i);
@@ -17,7 +17,7 @@ public class BufferedStreamDemo {
             bw.flush();
         }
         bw.close();
-        */
+
 
 
         BufferedReader br = new BufferedReader(new FileReader("a.txt"));
