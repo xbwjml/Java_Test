@@ -5,28 +5,28 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * ¶ş½øÖÆÎÄ¼şÖ»ÄÜÓÃ×Ö½ÚÁ÷½øĞĞ¸´ÖÆ
+ * äºŒè¿›åˆ¶æ–‡ä»¶åªèƒ½ç”¨å­—èŠ‚æµè¿›è¡Œå¤åˆ¶
  * @author Leemi
  *
  */
 public class Demo3 {
 	public static void main(String[] args) throws IOException {
 		
-		//´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-		FileInputStream fis = new FileInputStream("²âÊÔÍ¼Æ¬.png");
-		//´´½¨×Ö½ÚÊä³öÁ÷¶ÔÏó
-		FileOutputStream fos = new FileOutputStream("d:\\Í¼Æ¬¸±±¾.png");
+		//åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+		FileInputStream fis = new FileInputStream("æµ‹è¯•å›¾ç‰‡.png");
+		//åˆ›å»ºå­—èŠ‚è¾“å‡ºæµå¯¹è±¡
+		FileOutputStream fos = new FileOutputStream("d:\\å›¾ç‰‡å‰¯æœ¬.png");
 		
-		//Ò»´Î¶ÁĞ´Ò»¸ö×Ö½ÚÊı×é
+		//ä¸€æ¬¡è¯»å†™ä¸€ä¸ªå­—ç¬¦æ•°ç»„
 		int len;
 		byte[] bys = new byte[1024];
 		while( (len=fis.read(bys)) != -1 ) {
 			fos.write(bys,0,len);
 		}
 		
-		//×Ö½ÚÁ÷²»ĞèÒªË¢ĞÂ»º³åÇø
+		//å­—èŠ‚æµä¸éœ€è¦åˆ·æ–°ç¼“å†²åŒº
 		
-		//ÊÍ·Å×ÊÔ´
+		//é‡Šæ”¾èµ„æº
 		fos.close();
 		fis.close();
 	}
