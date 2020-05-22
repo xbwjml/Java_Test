@@ -9,6 +9,11 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 自定义线程池
+ * @author Leemi
+ *
+ */
 public class Demo2 {
 	public static void main(String[] args) {
 		
