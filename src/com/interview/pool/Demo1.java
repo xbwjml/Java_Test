@@ -5,9 +5,9 @@ import java.util.concurrent.Executors;
 
 public class Demo1 {
 	public static void main(String[] args) {
-//		ExecutorService threadPool = Executors.newFixedThreadPool(5);//一池5个处理线程
+		ExecutorService threadPool = Executors.newFixedThreadPool(5);//一池5个处理线程
 //		ExecutorService threadPool = Executors.newSingleThreadExecutor();//一池1个处理线程
-		ExecutorService threadPool = Executors.newCachedThreadPool();//一池不确定个处理线程
+//		ExecutorService threadPool = Executors.newCachedThreadPool();//一池不确定个处理线程
 		
 		try {
 			//模拟10个用户，每个用户就是来自外部的请求
