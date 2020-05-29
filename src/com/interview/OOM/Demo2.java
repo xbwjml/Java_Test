@@ -1,4 +1,4 @@
-package com.interview;
+package com.interview.OOM;
 
 /**
  * 设置 -Xms1m -Xmx1m
