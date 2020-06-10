@@ -2,8 +2,8 @@ package com.designPattern.singleton;
 
 public class Test03 {
 	public static void main(String[] args) {
-		Singleton01 instance = Singleton01.getInstance();
-		Singleton01 instance2 = Singleton01.getInstance();
+		Singleton03 instance = Singleton03.getInstance();
+		Singleton03 instance2 = Singleton03.getInstance();
 		System.out.println(instance == instance2);
 	}
 }
