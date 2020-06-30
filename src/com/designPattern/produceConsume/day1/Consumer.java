@@ -1,8 +1,8 @@
 package com.designPattern.produceConsume.day1;
 
-public class Producer implements Runnable{
+public class Consumer implements Runnable{
 	private Storage storage;
-	public Producer(Storage storage) {
+	public Consumer(Storage storage) {
 		this.storage = storage;
 	}
 	
@@ -11,11 +11,10 @@ public class Producer implements Runnable{
 		while (true) {
 			try {
 				Thread.sleep(1000);
-				storage.prodece();
+				storage.consume();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
 	}
-	
 }
